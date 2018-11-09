@@ -6,7 +6,6 @@ import { AppComponent } from "./app.component";
 import { DataService } from "./data.service";
 import { NSModuleFactoryLoader } from "nativescript-angular/router";
 
-import { SharedModule } from "./shared.module";
 import { enable as traceEnable, addCategories } from "tns-core-modules/trace";
 
 traceEnable();
@@ -23,7 +22,6 @@ class MyErrorHandler implements ErrorHandler {
         AppComponent
     ],
     imports: [
-        SharedModule,
         NativeScriptModule,
         AppRoutingModule,
     ],
