@@ -3,16 +3,15 @@
 <StackLayout>
     <GridLayout rows="auto,*">
         <WrapLayout row="0">
-            <Button text="Go To About Page" [nsRouterLink]="['../../about']"></Button>
             <Button text="Back()" (tap)="back()"></Button>
-            <Button text="Back-To-Login(ActivatedRoute)" (tap)="backActivatedRoute()"></Button>
+            <Button text="Back-To-Main(ActivatedRoute)" (tap)="backActivatedRoute()"></Button>
         </WrapLayout>
         <GridLayout row="1">
             <TabView androidTabsPosition="top">
-                <page-router-outlet *tabItem="{title: 'Players Tab'}" name="playerTab">
+                <page-router-outlet tag="playersOutlet" *tabItem="{title: 'Players Tab'}" name="playerTab">
                 </page-router-outlet>
 
-                <page-router-outlet *tabItem="{title: 'Teams Tab'}" name="teamTab">
+                <page-router-outlet tag="teamsOutlet" *tabItem="{title: 'Teams Tab'}" name="teamTab">
                 </page-router-outlet>
             </TabView>
         </GridLayout>

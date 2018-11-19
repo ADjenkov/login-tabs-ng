@@ -3,9 +3,9 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { Routes } from "@angular/router";
 
 import { LoginComponent } from "./login/login.component";
-import { AboutComponent } from "./about/about.component";
+import { MainComponent } from "./main/main.component";
 
-export const COMPONENTS = [LoginComponent, AboutComponent];
+export const COMPONENTS = [LoginComponent, MainComponent];
 
 const routes: Routes = [
     { path: "", redirectTo: "/login", pathMatch: "full" },
@@ -13,12 +13,12 @@ const routes: Routes = [
         path: "login", component: LoginComponent
     },
     {
+        path: "main", component: MainComponent
+    },
+    {
         path: "home",
         loadChildren: "./app/tabs/tabs.module#TabsModule"
     },
-    {
-        path: "about", component: AboutComponent
-    }
 ];
 
 @NgModule({
