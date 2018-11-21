@@ -9,7 +9,6 @@ import { TabsComponent } from "./tabs.component";
         NativeScriptCommonModule,
         NativeScriptRouterModule,
         NativeScriptRouterModule.forChild([
-            { path: "", redirectTo: "tabs" },
             {
                 path: "tabs", component: TabsComponent, children: [
                     {
