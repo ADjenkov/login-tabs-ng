@@ -5,11 +5,11 @@
             <Button text="Back(ActivatedRoute)" (tap)="backActivatedRoute()"></Button>
         </StackLayout>
         <GridLayout row="1">
-            <TabView androidTabsPosition="top">
-                <page-router-outlet tag="playersOutlet" *tabItem="{title: 'Players Tab'}" name="playerTab" actionBarVisibility="never">
+            <TabView androidTabsPosition="bottom">
+                <page-router-outlet *tabItem="{title: 'Players Tab'}" name="playerTab" actionBarVisibility="never">
                 </page-router-outlet>
 
-                <page-router-outlet tag="teamsOutlet" *tabItem="{title: 'Teams Tab'}" name="teamTab"
+                <page-router-outlet *tabItem="{title: 'Teams Tab'}" name="teamTab"
                     actionBarVisibility="never">
                 </page-router-outlet>
             </TabView>
