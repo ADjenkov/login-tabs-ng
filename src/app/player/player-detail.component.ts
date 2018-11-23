@@ -31,7 +31,19 @@ export class PlayerDetailComponent implements OnInit {
         this.subscription.unsubscribe();
     }
 
-    backPlayers() {
+    back() {
+        this.routerExtension.back();
+    }
+
+    backByOutlet() {
+        this.routerExtension.back({ outlets: ["primary"] });
+    }
+
+    backByParentRoute() {
+        this.routerExtension.back({ relativeTo: this.activeRoute.parent });
+    }
+
+    backByActivatedRoute() {
         this.routerExtension.back({ relativeTo: this.activeRoute });
     }
 }

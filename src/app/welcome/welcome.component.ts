@@ -3,10 +3,10 @@ import { RouterExtensions } from "nativescript-angular/router";
 
 @Component({
     moduleId: module.id,
-    selector: "main-page",
-    templateUrl: "./main.component.html"
+    selector: "welcome-page",
+    templateUrl: "./welcome.component.html"
 })
-export class MainComponent {
+export class WelcomeComponent {
     constructor(private routerExtension: RouterExtensions) { };
 
     onLogout() {

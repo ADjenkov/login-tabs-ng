@@ -8,8 +8,8 @@ import { RouterExtensions } from "nativescript-angular/router";
 export class LoginComponent {
     constructor(private routerExtension: RouterExtensions) { };
 
-    onNavigateMain() {
-        // Navigate to main page with clearHistory
-        this.routerExtension.navigate(["../main"], { clearHistory: true });
+    onNavigateWelcome() {
+        // Navigate to welcomew page with clearHistory
+        this.routerExtension.navigate(["../welcome"], { clearHistory: true });
     }
 }

@@ -10,7 +10,7 @@ import { TabsComponent } from "./tabs.component";
         NativeScriptRouterModule,
         NativeScriptRouterModule.forChild([
             {
-                path: "tabs", component: TabsComponent, children: [
+                path: "default", component: TabsComponent, children: [
                     {
                         path: "players",
                         outlet: "playerTab",

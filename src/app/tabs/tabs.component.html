@@ -1,18 +1,7 @@
-<StackLayout>
-    <GridLayout rows="auto,*">
-        <StackLayout row="0">
-            <Button text="Back()" (tap)="back()"></Button>
-            <Button text="Back(ActivatedRoute)" (tap)="backActivatedRoute()"></Button>
-        </StackLayout>
-        <GridLayout row="1">
-            <TabView androidTabsPosition="bottom">
-                <page-router-outlet *tabItem="{title: 'Players Tab'}" name="playerTab" actionBarVisibility="never">
-                </page-router-outlet>
+<TabView androidTabsPosition="bottom">
+    <page-router-outlet *tabItem="{title: 'Players Tab'}" name="playerTab" actionBarVisibility="never">
+    </page-router-outlet>
 
-                <page-router-outlet *tabItem="{title: 'Teams Tab'}" name="teamTab"
-                    actionBarVisibility="never">
-                </page-router-outlet>
-            </TabView>
-        </GridLayout>
-    </GridLayout>
-</StackLayout>
+    <page-router-outlet *tabItem="{title: 'Teams Tab'}" name="teamTab" actionBarVisibility="never">
+    </page-router-outlet>
+</TabView>
