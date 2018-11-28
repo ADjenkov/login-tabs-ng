@@ -17,7 +17,7 @@ const routes: Routes = [
     },
     {
         path: "tabs",
-        loadChildren: "./app/tabs/tabs.module#TabsModule"
+        loadChildren: "~/app/tabs/tabs.module#TabsModule"
     },
 ];
 

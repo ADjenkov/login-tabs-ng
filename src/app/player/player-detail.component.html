@@ -6,7 +6,7 @@
     <Button text="Next Player" [nsRouterLink]="['../', item.id + 1]"></Button>
     <Button text="Go To Players" [nsRouterLink]="['../../players']"></Button>
     <Button text="Back()" (tap)="back()"></Button>
+    <Button text="Back(ActivatedRoute)" (tap)="backByActivatedRoute()"></Button>
     <Button text="Back(OutletName)" (tap)="backByOutlet()"></Button>
     <Button text="Back(ParentRoute)" (tap)="backByParentRoute()"></Button>
-    <Button text="Back(ActivatedRoute)" (tap)="backByActivatedRoute()"></Button>
 </StackLayout>

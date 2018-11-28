@@ -45,7 +45,7 @@
     "mocha-multi": "^1.0.1",
     "nativescript-dev-appium": "next",
     "nativescript-dev-typescript": "~0.7.4",
-    "nativescript-dev-webpack": "next",
+    "nativescript-dev-webpack": "^0.18.0",
     "typescript": "~2.7.2"
   },
   "scripts": {
